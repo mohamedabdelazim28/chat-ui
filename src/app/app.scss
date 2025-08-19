@@ -88,6 +88,7 @@
 
   app-chat-window {
     grid-area: chat-window;
+    display: none;
   }
 }
 
@@ -234,9 +235,12 @@
     grid-template-rows: 1fr;
   }
 
-  .sidebar,
-  .header {
+  .sidebar {
     display: none;
+  }
+
+  .header {
+    grid-area: navbar;
   }
 
   .chat-list {
